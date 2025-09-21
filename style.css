@@ -1,0 +1,166 @@
+/* General Body and Main Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f0e3; /* A soft, warm background color */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto; /* Center the content */
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #f8f0e3; /* A soft, warm background color */
+}
+
+
+h2 {
+    text-align: center;
+    color: #d147a3; /* A lovely pinkish-purple color */
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #d147a3;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* About Her Section */
+#about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+#about img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%; /* Makes the photo circular */
+    border: 5px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    flex: 1;
+    text-align: justify;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+  width: 50px; /* Or any desired width */
+  aspect-ratio: 1 / 1; /* Sets the aspect ratio to 1:1 (square) */
+  object-fit: cover; /* Ensures the image covers the entire square area without distortion, cropping as needed */
+  object-position: center; /* Centers the image within the square */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #d147a3;
+}
+
+/* Countdown Section */
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#timer div {
+    background-color: #d147a3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#timer span {
+    display: block;
+    font-size: 1.5em;
+}
+
+/* Event Schedule Section */
+#schedule ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#schedule li {
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #d147a3;
+    border-radius: 5px;
+}
