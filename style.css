@@ -137,6 +137,10 @@ footer p {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
+   
+    flex-wrap: nowrap;   /* Force one row */
+    width: 100%;         /* Take full width */
+    box-sizing: border-box;
 }
 
 #timer div {
@@ -144,11 +148,21 @@ footer p {
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
+    flex: 1 1 auto;      /* Allow shrink and grow */
+    min-width: 0;        /* Prevent overflow */
 }
 
 #timer span {
     display: block;
     font-size: 1.5em;
+}
+
+@media (max-width: 600px) {
+  #timer {
+    font-size: 1.0em;  /* Reduce font size */
+    gap: 10px;         /* Reduce spacing */
+    text-align: center;
+  }
 }
 
 /* Event Schedule Section */
