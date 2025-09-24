@@ -58,3 +58,28 @@ const x = setInterval(function() {
         document.getElementById("timer").innerHTML = "IT'S OUR DATE!";
     }
 }, 1000);
+
+// 🎉 Confetti surprise when page loads
+window.onload = function () {
+    var duration = 3 * 1000; // 5 seconds
+    var end = Date.now() + duration;
+
+    (function frame() {
+        confetti({
+            particleCount: 10,
+            angle: 60,
+            spread: 80,
+            origin: { x: 0 }
+        });
+        confetti({
+            particleCount: 10,
+            angle: 120,
+            spread: 80,
+            origin: { x: 1 }
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+};
