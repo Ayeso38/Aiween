@@ -51,6 +51,14 @@ footer p {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 #about img {
@@ -178,3 +186,4 @@ footer p {
     border-left: 5px solid #d147a3;
     border-radius: 5px;
 }
+
